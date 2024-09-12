@@ -1889,14 +1889,14 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 ::: panel-tabset
 ### [**Leon**]{style="color:#990000"}
 
-html>
+<html>
 <head>
 
 ```{=html}
 <style>
 .grid-container1 {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 500px 500px;
   padding: 5px;
 }
 
@@ -1975,7 +1975,7 @@ bivariate_map(data = risk,
 <style>
 .grid-container1 {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 500px 500px;
   padding: 5px;
 }
 
@@ -2053,7 +2053,7 @@ bivariate_map(data = risk,
 <style>
 .grid-container1 {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 500px 500px;
   padding: 5px;
 }
 
@@ -2132,7 +2132,7 @@ bivariate_map(data = risk,
 <style>
 .grid-container1 {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 500px 500px;
   padding: 5px;
 }
 
@@ -2210,7 +2210,7 @@ bivariate_map(data = risk,
 <style>
 .grid-container1 {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 500px 500px;
   padding: 5px;
 }
 
@@ -2287,7 +2287,7 @@ bivariate_map(data = risk,
 <style>
 .grid-container1 {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 500px 500px;
   padding: 5px;
 }
 
@@ -2367,7 +2367,7 @@ bivariate_map(data = risk,
 <style>
 .grid-container1 {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 500px 500px;
   padding: 5px;
 }
 
@@ -2444,7 +2444,7 @@ bivariate_map(data = risk,
 <style>
 .grid-container1 {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 500px 500px;
   padding: 5px;
 }
 
