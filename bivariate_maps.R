@@ -8,9 +8,24 @@ risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
              cve_edo = "11",
              locality = "Leon de Aldama")
 
-x <- risk |>
-    dplyr::filter(epi_cluster == 4)
-mapview::mapview(x)
+alto <- risk |>
+    dplyr::filter(epi_cluster == 3 & entomo_cluster >= 1)
+muy_alto <- risk |>
+    dplyr::filter(epi_risk %in% c("Alto", 
+                                  "Muy Alto",
+                                  "Medio") & entomo_risk %in% c("Alto", "Muy Alto",
+                                                                "Medio"))
+
+mapview::mapview(risk,
+                 legend = FALSE) +
+mapview::mapview(muy_alto,
+                     col.region = "red",
+                     color = "white",
+                 legend = FALSE) +
+mapview::mapview(alto,
+                 col.region = "orange",
+                 color = "white",
+                 legend = FALSE)
 
 head(risk)
 # Step 2. map ####

@@ -2071,18 +2071,7 @@ bivariate_map(data = risk,
 :::
 
 ::: grid-item1
-```{r risk_ageb_celaya2}
-# Step 1. calculate the risk ####
 
-# Step 2. map ####
-bivariate_map(data = risk, 
-              x_leg = 0.67, 
-              y_leg = 0.65,
-              leg_scale = 0.9,
-              size_lab = 7,
-              static_map = FALSE)
-
-```
 :::
 :::
 
@@ -2194,16 +2183,7 @@ bivariate_map(data = risk,
 :::
 
 ::: grid-item1
-```{r risk_ageb_allende2}
-# Step 2. map ####
-bivariate_map(data = risk, 
-              x_leg = 0.67, 
-              y_leg = 0.65,
-              leg_scale = 0.9,
-              size_lab = 7,
-              static_map = FALSE)
 
-```
 :::
 :::
 
@@ -2254,19 +2234,6 @@ bivariate_map(data = risk,
 :::
 
 ::: grid-item1
-```{r risk_ageb_silao2}
-
-
-
-# Step 2. map ####
-bivariate_map(data = risk, 
-              x_leg = 0.67, 
-              y_leg = 0.65,
-              leg_scale = 0.9,
-              size_lab = 7,
-              static_map = FALSE)
-
-```
 :::
 :::
 
@@ -2318,16 +2285,7 @@ bivariate_map(data = risk,
 :::
 
 ::: grid-item1
-```{r risk_ageb_salamanca2}
-# Step 2. map ####
-bivariate_map(data = risk, 
-              x_leg = 0.67, 
-              y_leg = 0.65,
-              leg_scale = 0.9,
-              size_lab = 7,
-              static_map = FALSE)
 
-```
 :::
 :::
 
@@ -2378,16 +2336,7 @@ bivariate_map(data = risk,
 :::
 
 ::: grid-item1
-```{r risk_ageb_acambaro2}
-# Step 2. map ####
-bivariate_map(data = risk, 
-              x_leg = 0.67, 
-              y_leg = 0.65,
-              leg_scale = 0.9,
-              size_lab = 7,
-              static_map = FALSE)
 
-```
 :::
 :::
 
