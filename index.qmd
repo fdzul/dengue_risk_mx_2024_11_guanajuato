@@ -555,7 +555,7 @@ glm.fit <- glm(hotspots_gi~DENV_2008_2010 + DENV_2011_2014 +
                family = binomial)
 
 result <- parameters::model_parameters(glm.fit, 
-                                       exponentiate = FALSE)
+                                       exponentiate = TRUE)
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
@@ -771,7 +771,7 @@ glm.fit <- glm(hotspots_gi~DENV_2008_2010 + DENV_2011_2014 +
                family = binomial)
 
 result <- parameters::model_parameters(glm.fit, 
-                                       exponentiate = FALSE)
+                                       exponentiate = TRUE)
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
@@ -987,7 +987,7 @@ glm.fit <- glm(hotspots_gi~DENV_2008_2010 + DENV_2011_2014 +
                family = binomial)
 
 result <- parameters::model_parameters(glm.fit, 
-                                       exponentiate = FALSE)
+                                       exponentiate = TRUE)
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
@@ -1204,7 +1204,7 @@ glm.fit <- glm(hotspots_gi~DENV_2008_2010 + DENV_2011_2014 +
                family = binomial)
 
 result <- parameters::model_parameters(glm.fit, 
-                                       exponentiate = FALSE)
+                                       exponentiate = TRUE)
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
@@ -1421,7 +1421,7 @@ glm.fit <- glm(hotspots_gi~DENV_2008_2010 + DENV_2011_2014 +
                family = binomial)
 
 result <- parameters::model_parameters(glm.fit, 
-                                       exponentiate = FALSE)
+                                       exponentiate = TRUE)
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
@@ -1638,7 +1638,7 @@ glm.fit <- glm(hotspots_gi~DENV_2008_2010 + DENV_2011_2014 +
                family = binomial)
 
 result <- parameters::model_parameters(glm.fit, 
-                                       exponentiate = FALSE)
+                                       exponentiate = TRUE)
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
@@ -1859,21 +1859,191 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 
 ::: panel-tabset
 
-### [**Valladolid**]{style="color:#990000"}
+### [**Leon**]{style="color:#990000"}
 
 ```{r risk_ageb_leon}
 # Step 1. calculate the risk ####
-risk <- denhotspots::risk_ageb(betas = denmex::eggs_betas_11_guanajuato,
-                               hotspots = denmex::den_hotspots,
-                               intensity_perc = 25,
-                               locality = "León de Aldama",
-                               cve_edo = "11")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Leon de Aldama")
+
 
 # Step 2. map ####
-denhotspots::map_risk(risk = risk,
-                      staticmap = FALSE)
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7)
 
 ```
+
+
+### [**Guanajuato**]{style="color:#990000"}
+
+```{r risk_ageb_guanajuato}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Guanajuato")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7)
+
+```
+
+
+### [**Celaya**]{style="color:#990000"}
+
+```{r risk_ageb_celaya}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Celaya")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7)
+
+```
+
+
+### [**Irapuato**]{style="color:#990000"}
+
+```{r risk_ageb_irapuato}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Irapuato")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7)
+
+```
+
+
+
+### [**San Miguel Allende**]{style="color:#990000"}
+
+```{r risk_ageb_allende}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "San Miguel Allende")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7)
+
+```
+
+
+### [**Silao**]{style="color:#990000"}
+
+```{r risk_ageb_silao}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Silao de Victoria")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7)
+
+```
+
+
+### [**Salamanca**]{style="color:#990000"}
+
+```{r risk_ageb_salamanca}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Salamanca")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7)
+
+```
+
+
+### [**Acambaro**]{style="color:#990000"}
+
+```{r risk_ageb_acambaro}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Acambaro")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7)
+
+```
+
+
 
 :::
 
