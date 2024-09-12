@@ -13,6 +13,8 @@ mapview::mapviewOptions(default = TRUE,
 ```
 
 
+
+
 # [**Hotspots de Dengue**]{style="font-size:2pt"}
 
 ::: panel-tabset
@@ -21,6 +23,8 @@ mapview::mapviewOptions(default = TRUE,
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 body {
@@ -73,11 +77,15 @@ body {
   }
 </style>
 ```
+
+
 </head>
 <body>
 
 ::: wrapper
 ::: {.box .a}
+
+
 ```{r hotspots_dengue_leon}
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Leon de Aldama", 
@@ -98,9 +106,13 @@ mapview::mapview(hotspots,
                  col.regions = pal)
 
 ```
+
+
 :::
 
 ::: {.box .b}
+
+
 ```{r forest_plot_leon, dpi = 300, fig.height= 5,fig.width = 7,fig.align = "center", out.height='100%', out.width = '100%',fig.show = "hold"}
  
 # Logistic Regression
@@ -125,9 +137,13 @@ result <- parameters::model_parameters(glm.fit,
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
+
+
 :::
 
 ::: {.box .c}
+
+
 ```{r power_law_plot_leon,dpi = 300, warning=FALSE, fig.align = "center", out.width = '100%',out.height='100%',fig.show = "hold"}
 # Step 7. make the function por calculate the cumulative ####
 funcumsum <- function(x){
@@ -163,9 +179,13 @@ data_pareto <- hotspots   |>
 plotly::ggplotly(denhotspots::power_law_plot(x = data_pareto))  |> plotly::layout(showlegend = FALSE)
 
 ```
+
+
 :::
 
 ::: {.box .d}
+
+
 ```{r gauge_blocks_leon,fig.align = "center", out.height='100%', out.width = '100%', fig.width= 1.5, fig.height=1}
 y_hot <- hotspots |> dplyr::filter(hotspots_gi == 1)
 centroid <- rgeomex::blocks_ine20_mx_centroid |>
@@ -183,9 +203,13 @@ flexdashboard::gauge(round((nrow(b_hot)/nrow(b_loc))*100, digits = 1),
                                                             "#FC8427",
                                                             "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .e}
+
+
 ```{r gauge_AGEB_leon, fig.align = "center", out.height='100%', out.width = '100%'}
 
 y <- hotspots  |>
@@ -206,9 +230,13 @@ flexdashboard::gauge(round((nrow(y_hot)/nrow(y))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .f}
+
+
 ```{r gauge_casos_leon, out.height='90%', out.width = '90%', fig.align = "center"}
 
 y <- hotspots  |>
@@ -229,6 +257,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 :::
 </body>
@@ -239,6 +269,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 body {
@@ -291,10 +323,14 @@ body {
   }
 </style>
 ```
+
+
 </head>
 <body>
 ::: wrapper
 ::: {.box .a}
+
+
 ```{r hotspots_dengue_guanajuato}
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Guanajuato", 
@@ -315,9 +351,13 @@ mapview::mapview(hotspots,
                  col.regions = pal)
 
 ```
+
+
 :::
 
 ::: {.box .b}
+
+
 ```{r forest_plot_guanajuato, dpi = 300, fig.height= 5,fig.width = 7,fig.align = "center", out.height='100%', out.width = '100%',fig.show = "hold"}
  
 # Logistic Regression
@@ -342,9 +382,13 @@ result <- parameters::model_parameters(glm.fit,
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
+
+
 :::
 
 ::: {.box .c}
+
+
 ```{r power_law_plot_guanajuato,dpi = 300, warning=FALSE, fig.align = "center", out.width = '100%',out.height='100%',fig.show = "hold"}
 # Step 7. make the function por calculate the cumulative ####
 funcumsum <- function(x){
@@ -380,9 +424,13 @@ data_pareto <- hotspots   |>
 plotly::ggplotly(denhotspots::power_law_plot(x = data_pareto))  |> plotly::layout(showlegend = FALSE)
 
 ```
+
+
 :::
 
 ::: {.box .d}
+
+
 ```{r gauge_blocks_guanajuato,fig.align = "center", out.height='100%', out.width = '100%', fig.width= 1.5, fig.height=1}
 y_hot <- hotspots |> dplyr::filter(hotspots_gi == 1)
 centroid <- rgeomex::blocks_ine20_mx_centroid |>
@@ -400,9 +448,13 @@ flexdashboard::gauge(round((nrow(b_hot)/nrow(b_loc))*100, digits = 1),
                                                             "#FC8427",
                                                             "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .e}
+
+
 ```{r gauge_AGEB_guanajuato, fig.align = "center", out.height='100%', out.width = '100%'}
 
 y <- hotspots  |>
@@ -423,9 +475,13 @@ flexdashboard::gauge(round((nrow(y_hot)/nrow(y))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .f}
+
+
 ```{r gauge_casos_guanajuato, out.height='90%', out.width = '90%', fig.align = "center"}
 
 y <- hotspots  |>
@@ -446,6 +502,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 :::
 </body>
@@ -456,6 +514,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 body {
@@ -508,10 +568,14 @@ body {
   }
 </style>
 ```
+
+
 </head>
 <body>
 ::: wrapper
 ::: {.box .a}
+
+
 ```{r hotspots_dengue_celaya}
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Celaya", 
@@ -532,9 +596,13 @@ mapview::mapview(hotspots,
                  col.regions = pal)
 
 ```
+
+
 :::
 
 ::: {.box .b}
+
+
 ```{r forest_plot_celaya, dpi = 300, fig.height= 5,fig.width = 7,fig.align = "center", out.height='100%', out.width = '100%',fig.show = "hold"}
  
 # Logistic Regression
@@ -559,9 +627,13 @@ result <- parameters::model_parameters(glm.fit,
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
+
+
 :::
 
 ::: {.box .c}
+
+
 ```{r power_law_plot_celaya,dpi = 300, warning=FALSE, fig.align = "center", out.width = '100%',out.height='100%',fig.show = "hold"}
 # Step 7. make the function por calculate the cumulative ####
 funcumsum <- function(x){
@@ -597,9 +669,13 @@ data_pareto <- hotspots   |>
 plotly::ggplotly(denhotspots::power_law_plot(x = data_pareto))  |> plotly::layout(showlegend = FALSE)
 
 ```
+
+
 :::
 
 ::: {.box .d}
+
+
 ```{r gauge_blocks_celaya,fig.align = "center", out.height='100%', out.width = '100%', fig.width= 1.5, fig.height=1}
 y_hot <- hotspots |> dplyr::filter(hotspots_gi == 1)
 centroid <- rgeomex::blocks_ine20_mx_centroid |>
@@ -617,9 +693,13 @@ flexdashboard::gauge(round((nrow(b_hot)/nrow(b_loc))*100, digits = 1),
                                                             "#FC8427",
                                                             "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .e}
+
+
 ```{r gauge_AGEB_celaya, fig.align = "center", out.height='100%', out.width = '100%'}
 
 y <- hotspots  |>
@@ -640,9 +720,13 @@ flexdashboard::gauge(round((nrow(y_hot)/nrow(y))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .f}
+
+
 ```{r gauge_casos_celaya, out.height='90%', out.width = '90%', fig.align = "center"}
 
 y <- hotspots  |>
@@ -663,6 +747,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 :::
 </body>
@@ -672,6 +758,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 body {
@@ -724,10 +812,14 @@ body {
   }
 </style>
 ```
+
+
 </head>
 <body>
 ::: wrapper
 ::: {.box .a}
+
+
 ```{r hotspots_dengue_irapuato}
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Irapuato", 
@@ -748,9 +840,13 @@ mapview::mapview(hotspots,
                  col.regions = pal)
 
 ```
+
+
 :::
 
 ::: {.box .b}
+
+
 ```{r forest_plot_irapuato, dpi = 300, fig.height= 5,fig.width = 7,fig.align = "center", out.height='100%', out.width = '100%',fig.show = "hold"}
  
 # Logistic Regression
@@ -775,9 +871,13 @@ result <- parameters::model_parameters(glm.fit,
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
+
+
 :::
 
 ::: {.box .c}
+
+
 ```{r power_law_plot_irapuato,dpi = 300, warning=FALSE, fig.align = "center", out.width = '100%',out.height='100%',fig.show = "hold"}
 # Step 7. make the function por calculate the cumulative ####
 funcumsum <- function(x){
@@ -813,9 +913,13 @@ data_pareto <- hotspots   |>
 plotly::ggplotly(denhotspots::power_law_plot(x = data_pareto))  |> plotly::layout(showlegend = FALSE)
 
 ```
+
+
 :::
 
 ::: {.box .d}
+
+
 ```{r gauge_blocks_irapuato,fig.align = "center", out.height='100%', out.width = '100%', fig.width= 1.5, fig.height=1}
 y_hot <- hotspots |> dplyr::filter(hotspots_gi == 1)
 centroid <- rgeomex::blocks_ine20_mx_centroid |>
@@ -833,9 +937,13 @@ flexdashboard::gauge(round((nrow(b_hot)/nrow(b_loc))*100, digits = 1),
                                                             "#FC8427",
                                                             "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .e}
+
+
 ```{r gauge_AGEB_irapuato, fig.align = "center", out.height='100%', out.width = '100%'}
 
 y <- hotspots  |>
@@ -856,9 +964,13 @@ flexdashboard::gauge(round((nrow(y_hot)/nrow(y))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .f}
+
+
 ```{r gauge_casos_irapuato, out.height='90%', out.width = '90%', fig.align = "center"}
 
 y <- hotspots  |>
@@ -879,6 +991,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 :::
 </body>
@@ -888,6 +1002,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 body {
@@ -940,10 +1056,14 @@ body {
   }
 </style>
 ```
+
+
 </head>
 <body>
 ::: wrapper
 ::: {.box .a}
+
+
 ```{r hotspots_dengue_san_miguel}
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "San Miguel Allende", 
@@ -964,9 +1084,13 @@ mapview::mapview(hotspots,
                  col.regions = pal)
 
 ```
+
+
 :::
 
 ::: {.box .b}
+
+
 ```{r forest_plot_san_miguel, dpi = 300, fig.height= 5,fig.width = 7,fig.align = "center", out.height='100%', out.width = '100%',fig.show = "hold"}
  
 # Logistic Regression
@@ -991,9 +1115,13 @@ result <- parameters::model_parameters(glm.fit,
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
+
+
 :::
 
 ::: {.box .c}
+
+
 ```{r power_law_plot_san_miguel,dpi = 300, warning=FALSE, fig.align = "center", out.width = '100%',out.height='100%',fig.show = "hold"}
 # Step 7. make the function por calculate the cumulative ####
 funcumsum <- function(x){
@@ -1029,9 +1157,13 @@ data_pareto <- hotspots   |>
 plotly::ggplotly(denhotspots::power_law_plot(x = data_pareto))  |> plotly::layout(showlegend = FALSE)
 
 ```
+
+
 :::
 
 ::: {.box .d}
+
+
 ```{r gauge_blocks_san_miguel,fig.align = "center", out.height='100%', out.width = '100%', fig.width= 1.5, fig.height=1}
 y_hot <- hotspots |> dplyr::filter(hotspots_gi == 1)
 centroid <- rgeomex::blocks_ine20_mx_centroid |>
@@ -1049,9 +1181,13 @@ flexdashboard::gauge(round((nrow(b_hot)/nrow(b_loc))*100, digits = 1),
                                                             "#FC8427",
                                                             "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .e}
+
+
 ```{r gauge_AGEB_san_miguel, fig.align = "center", out.height='100%', out.width = '100%'}
 
 y <- hotspots  |>
@@ -1072,9 +1208,13 @@ flexdashboard::gauge(round((nrow(y_hot)/nrow(y))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .f}
+
+
 ```{r gauge_casos_san_miguel, out.height='90%', out.width = '90%', fig.align = "center"}
 
 y <- hotspots  |>
@@ -1095,6 +1235,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 :::
 </body>
@@ -1105,6 +1247,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 body {
@@ -1157,10 +1301,14 @@ body {
   }
 </style>
 ```
+
+
 </head>
 <body>
 ::: wrapper
 ::: {.box .a}
+
+
 ```{r hotspots_dengue_silao}
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Silao de Victoria", 
@@ -1181,9 +1329,13 @@ mapview::mapview(hotspots,
                  col.regions = pal)
 
 ```
+
+
 :::
 
 ::: {.box .b}
+
+
 ```{r forest_plot_silao, dpi = 300, fig.height= 5,fig.width = 7,fig.align = "center", out.height='100%', out.width = '100%',fig.show = "hold"}
  
 # Logistic Regression
@@ -1208,9 +1360,13 @@ result <- parameters::model_parameters(glm.fit,
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
+
+
 :::
 
 ::: {.box .c}
+
+
 ```{r power_law_plot_silao,dpi = 300, warning=FALSE, fig.align = "center", out.width = '100%',out.height='100%',fig.show = "hold"}
 # Step 7. make the function por calculate the cumulative ####
 funcumsum <- function(x){
@@ -1246,9 +1402,13 @@ data_pareto <- hotspots   |>
 plotly::ggplotly(denhotspots::power_law_plot(x = data_pareto))  |> plotly::layout(showlegend = FALSE)
 
 ```
+
+
 :::
 
 ::: {.box .d}
+
+
 ```{r gauge_blocks_silao,fig.align = "center", out.height='100%', out.width = '100%', fig.width= 1.5, fig.height=1}
 y_hot <- hotspots |> dplyr::filter(hotspots_gi == 1)
 centroid <- rgeomex::blocks_ine20_mx_centroid |>
@@ -1266,9 +1426,13 @@ flexdashboard::gauge(round((nrow(b_hot)/nrow(b_loc))*100, digits = 1),
                                                             "#FC8427",
                                                             "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .e}
+
+
 ```{r gauge_AGEB_silao, fig.align = "center", out.height='100%', out.width = '100%'}
 
 y <- hotspots  |>
@@ -1289,9 +1453,13 @@ flexdashboard::gauge(round((nrow(y_hot)/nrow(y))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .f}
+
+
 ```{r gauge_casos_silao, out.height='90%', out.width = '90%', fig.align = "center"}
 
 y <- hotspots  |>
@@ -1312,6 +1480,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 :::
 </body>
@@ -1322,6 +1492,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 body {
@@ -1374,10 +1546,14 @@ body {
   }
 </style>
 ```
+
+
 </head>
 <body>
 ::: wrapper
 ::: {.box .a}
+
+
 ```{r hotspots_dengue_salamanca}
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Salamanca", 
@@ -1398,9 +1574,13 @@ mapview::mapview(hotspots,
                  col.regions = pal)
 
 ```
+
+
 :::
 
 ::: {.box .b}
+
+
 ```{r forest_plot_salamanca, dpi = 300, fig.height= 5,fig.width = 7,fig.align = "center", out.height='100%', out.width = '100%',fig.show = "hold"}
  
 # Logistic Regression
@@ -1425,9 +1605,13 @@ result <- parameters::model_parameters(glm.fit,
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
+
+
 :::
 
 ::: {.box .c}
+
+
 ```{r power_law_plot_salamanca,dpi = 300, warning=FALSE, fig.align = "center", out.width = '100%',out.height='100%',fig.show = "hold"}
 # Step 7. make the function por calculate the cumulative ####
 funcumsum <- function(x){
@@ -1463,9 +1647,13 @@ data_pareto <- hotspots   |>
 plotly::ggplotly(denhotspots::power_law_plot(x = data_pareto))  |> plotly::layout(showlegend = FALSE)
 
 ```
+
+
 :::
 
 ::: {.box .d}
+
+
 ```{r gauge_blocks_salamanca,fig.align = "center", out.height='100%', out.width = '100%', fig.width= 1.5, fig.height=1}
 y_hot <- hotspots |> dplyr::filter(hotspots_gi == 1)
 centroid <- rgeomex::blocks_ine20_mx_centroid |>
@@ -1483,9 +1671,13 @@ flexdashboard::gauge(round((nrow(b_hot)/nrow(b_loc))*100, digits = 1),
                                                             "#FC8427",
                                                             "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .e}
+
+
 ```{r gauge_AGEB_salamanca, fig.align = "center", out.height='100%', out.width = '100%'}
 
 y <- hotspots  |>
@@ -1506,9 +1698,13 @@ flexdashboard::gauge(round((nrow(y_hot)/nrow(y))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .f}
+
+
 ```{r gauge_casos_salamanca, out.height='90%', out.width = '90%', fig.align = "center"}
 
 y <- hotspots  |>
@@ -1529,6 +1725,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 :::
 </body>
@@ -1539,6 +1737,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 body {
@@ -1591,10 +1791,14 @@ body {
   }
 </style>
 ```
+
+
 </head>
 <body>
 ::: wrapper
 ::: {.box .a}
+
+
 ```{r hotspots_dengue_acambaro}
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Acambaro", 
@@ -1615,9 +1819,13 @@ mapview::mapview(hotspots,
                  col.regions = pal)
 
 ```
+
+
 :::
 
 ::: {.box .b}
+
+
 ```{r forest_plot_acambaro, dpi = 300, fig.height= 5,fig.width = 7,fig.align = "center", out.height='100%', out.width = '100%',fig.show = "hold"}
  
 # Logistic Regression
@@ -1642,9 +1850,13 @@ result <- parameters::model_parameters(glm.fit,
 
 plotly::ggplotly(plot(result, size_text = 1))
 ```
+
+
 :::
 
 ::: {.box .c}
+
+
 ```{r power_law_plot_acambaro,dpi = 300, warning=FALSE, fig.align = "center", out.width = '100%',out.height='100%',fig.show = "hold"}
 # Step 7. make the function por calculate the cumulative ####
 funcumsum <- function(x){
@@ -1680,9 +1892,13 @@ data_pareto <- hotspots   |>
 plotly::ggplotly(denhotspots::power_law_plot(x = data_pareto))  |> plotly::layout(showlegend = FALSE)
 
 ```
+
+
 :::
 
 ::: {.box .d}
+
+
 ```{r gauge_blocks_acambaro,fig.align = "center", out.height='100%', out.width = '100%', fig.width= 1.5, fig.height=1}
 y_hot <- hotspots |> dplyr::filter(hotspots_gi == 1)
 centroid <- rgeomex::blocks_ine20_mx_centroid |>
@@ -1700,9 +1916,13 @@ flexdashboard::gauge(round((nrow(b_hot)/nrow(b_loc))*100, digits = 1),
                                                             "#FC8427",
                                                             "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .e}
+
+
 ```{r gauge_AGEB_acambaro, fig.align = "center", out.height='100%', out.width = '100%'}
 
 y <- hotspots  |>
@@ -1723,9 +1943,13 @@ flexdashboard::gauge(round((nrow(y_hot)/nrow(y))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 
 ::: {.box .f}
+
+
 ```{r gauge_casos_acambaro, out.height='90%', out.width = '90%', fig.align = "center"}
 
 y <- hotspots  |>
@@ -1746,6 +1970,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
                                              "#FC8427",
                                              "#E01A59")))
 ```
+
+
 :::
 :::
 </body>
@@ -1762,6 +1988,8 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 
 ### [**Guanajuato**]{style="color:#990000"}
 
+
+
 ```{r vector_hotspots_guanajuato, dpi = 300, warning=FALSE, message=FALSE}
 deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
                            locality = "Guanajuato",
@@ -1772,7 +2000,11 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 ```
 
 
+
+
 ### [**León**]{style="color:#990000"}
+
+
 
 ```{r vector_hotspots_leon, dpi = 300, warning=FALSE, message=FALSE}
 deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
@@ -1783,7 +2015,11 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
                            static_map = FALSE)
 ```
 
+
+
 ### [**Celaya**]{style="color:#990000"}
+
+
 
 ```{r vector_hotspots_celaya, dpi = 300, warning=FALSE, message=FALSE}
 deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
@@ -1794,7 +2030,11 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
                            static_map = FALSE)
 ```
 
+
+
 ### [**Irapuato**]{style="color:#990000"}
+
+
 
 ```{r vector_hotspots_irapuato, dpi = 300, warning=FALSE, message=FALSE}
 deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
@@ -1805,7 +2045,11 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
                            static_map = FALSE)
 ```
 
+
+
 ### [**San Miguel Allende**]{style="color:#990000"}
+
+
 
 ```{r vector_hotspots_san_miguel, dpi = 300, warning=FALSE, message=FALSE}
 deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
@@ -1817,7 +2061,11 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 ```
 
 
+
+
 ### [**Silao**]{style="color:#990000"}
+
+
 
 ```{r vector_hotspots_silao, dpi = 300, warning=FALSE, message=FALSE}
 deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
@@ -1829,7 +2077,11 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 ```
 
 
+
+
 ### [**Salamanca**]{style="color:#990000"}
+
+
 
 ```{r vector_hotspots_salamanca, dpi = 300, warning=FALSE, message=FALSE}
 deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
@@ -1841,7 +2093,11 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 ```
 
 
+
+
 ### [**Acámbaro**]{style="color:#990000"}
+
+
 
 ```{r vector_hotspots_acambaro, dpi = 300, warning=FALSE, message=FALSE}
 deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
@@ -1853,6 +2109,8 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 ```
 
 
+
+
 :::
 
 # [**Escenarios Epidemiológicos**]{style="font-size:2pt"}
@@ -1860,6 +2118,8 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 ::: panel-tabset
 
 ### [**Valladolid**]{style="color:#990000"}
+
+
 
 ```{r risk_ageb_leon}
 # Step 1. calculate the risk ####
@@ -1875,7 +2135,10 @@ denhotspots::map_risk(risk = risk,
 
 ```
 
+
+
 :::
+
 
 
 
