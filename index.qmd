@@ -79,18 +79,17 @@ body {
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_leon}
-load("/Users/fdzul/Dropbox/hotspots_2023/8.RData/hotspots_hexagons/hotspots_hexagon_clustering.RData")
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Leon de Aldama", 
                                  cve_edo = "11")
 
 # Step 2. extract the locality ####
-hotspots_h3 <- hotspots[loc, ]
+hotspots <- denmex::hotspots_hex[loc, ]
 
 # Step 3- Interactive Map ####
 pal <- rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
                               name = "OrYel")
-mapview::mapview(hotspots_h3,
+mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
                  label = FALSE,
@@ -297,18 +296,17 @@ body {
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_guanajuato}
-load("/Users/fdzul/Dropbox/hotspots_2023/8.RData/hotspots_hexagons/hotspots_hexagon_clustering.RData")
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Guanajuato", 
                                  cve_edo = "11")
 
 # Step 2. extract the locality ####
-hotspots_h3 <- hotspots[loc, ]
+hotspots <- denmex::hotspots_hex[loc, ]
 
 # Step 3- Interactive Map ####
-pal <- rcartocolor::carto_pal(n = max(hotspots_h3$intensity_gi), 
+pal <- rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
                               name = "OrYel")
-mapview::mapview(hotspots_h3,
+mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
                  label = FALSE,
@@ -515,18 +513,17 @@ body {
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_celaya}
-load("/Users/fdzul/Dropbox/hotspots_2023/8.RData/hotspots_hexagons/hotspots_hexagon_clustering.RData")
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Celaya", 
                                  cve_edo = "11")
 
 # Step 2. extract the locality ####
-hotspots_h3 <- hotspots[loc, ]
+hotspots <- denmex::hotspots_hex[loc, ]
 
 # Step 3- Interactive Map ####
-pal <- rcartocolor::carto_pal(n = max(hotspots_h3$intensity_gi), 
+pal <- rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
                               name = "OrYel")
-mapview::mapview(hotspots_h3,
+mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
                  label = FALSE,
@@ -732,13 +729,12 @@ body {
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_irapuato}
-load("/Users/fdzul/Dropbox/hotspots_2023/8.RData/hotspots_hexagons/hotspots_hexagon_clustering.RData")
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Irapuato", 
                                  cve_edo = "11")
 
 # Step 2. extract the locality ####
-hotspots <- hotspots[loc, ]
+hotspots <- denmex::hotspots_hex[loc, ]
 
 # Step 3- Interactive Map ####
 pal <- rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
@@ -949,18 +945,17 @@ body {
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_san_miguel}
-load("/Users/fdzul/Dropbox/hotspots_2023/8.RData/hotspots_hexagons/hotspots_hexagon_clustering.RData")
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "San Miguel Allende", 
                                  cve_edo = "11")
 
 # Step 2. extract the locality ####
-hotspots_h3 <- hotspots[loc, ]
+hotspots <- denmex::hotspots_hex[loc, ]
 
 # Step 3- Interactive Map ####
-pal <- rcartocolor::carto_pal(n = max(hotspots_h3$intensity_gi), 
+pal <- rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
                               name = "OrYel")
-mapview::mapview(hotspots_h3,
+mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
                  label = FALSE,
@@ -1167,18 +1162,17 @@ body {
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_silao}
-load("/Users/fdzul/Dropbox/hotspots_2023/8.RData/hotspots_hexagons/hotspots_hexagon_clustering.RData")
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Silao de Victoria", 
                                  cve_edo = "11")
 
 # Step 2. extract the locality ####
-hotspots_h3 <- hotspots[loc, ]
+hotspots <- denmex::hotspots_hex[loc, ]
 
 # Step 3- Interactive Map ####
-pal <- rcartocolor::carto_pal(n = max(hotspots_h3$intensity_gi), 
+pal <- rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
                               name = "OrYel")
-mapview::mapview(hotspots_h3,
+mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
                  label = FALSE,
@@ -1385,18 +1379,17 @@ body {
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_salamanca}
-load("/Users/fdzul/Dropbox/hotspots_2023/8.RData/hotspots_hexagons/hotspots_hexagon_clustering.RData")
 # Step 1. extract the localidty
 loc <- rgeomex::extract_locality(locality = "Salamanca", 
                                  cve_edo = "11")
 
 # Step 2. extract the locality ####
-hotspots_h3 <- hotspots[loc, ]
+hotspots <- denmex::hotspots_hex[loc, ]
 
 # Step 3- Interactive Map ####
-pal <- rcartocolor::carto_pal(n = max(hotspots_h3$intensity_gi), 
+pal <- rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
                               name = "OrYel")
-mapview::mapview(hotspots_h3,
+mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
                  label = FALSE,
