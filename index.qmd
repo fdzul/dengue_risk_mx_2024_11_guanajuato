@@ -1896,7 +1896,7 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 <style>
 .grid-container1 {
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 600px 600px;
   padding: 5px;
 }
 
@@ -1955,7 +1955,7 @@ bivariate_map(data = risk,
               y_leg = 0.65,
               leg_scale = 0.9,
               size_lab = 7,
-              static_map = TRUE)
+              static_map = FALSE)
 
 ```
 :::
@@ -1971,23 +1971,7 @@ bivariate_map(data = risk,
 
 <head>
 
-```{=html}
-<style>
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 500px 500px;
-  padding: 5px;
-}
 
-.grid-item1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
-  text-align: center;
-}
-</style>
-```
 </head>
 
 <body>
@@ -2049,23 +2033,7 @@ bivariate_map(data = risk,
 
 <head>
 
-```{=html}
-<style>
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 500px 500px;
-  padding: 5px;
-}
 
-.grid-item1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
-  text-align: center;
-}
-</style>
-```
 </head>
 
 <body>
@@ -2128,23 +2096,6 @@ bivariate_map(data = risk,
 
 <head>
 
-```{=html}
-<style>
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 500px 500px;
-  padding: 5px;
-}
-
-.grid-item1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
-  text-align: center;
-}
-</style>
-```
 </head>
 
 <body>
@@ -2206,23 +2157,6 @@ bivariate_map(data = risk,
 
 <head>
 
-```{=html}
-<style>
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 500px 500px;
-  padding: 5px;
-}
-
-.grid-item1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
-  text-align: center;
-}
-</style>
-```
 </head>
 
 <body>
@@ -2283,23 +2217,6 @@ bivariate_map(data = risk,
 
 <head>
 
-```{=html}
-<style>
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 500px 500px;
-  padding: 5px;
-}
-
-.grid-item1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
-  text-align: center;
-}
-</style>
-```
 </head>
 
 <body>
@@ -2363,23 +2280,7 @@ bivariate_map(data = risk,
 
 <head>
 
-```{=html}
-<style>
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 500px 500px;
-  padding: 5px;
-}
 
-.grid-item1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
-  text-align: center;
-}
-</style>
-```
 </head>
 
 <body>
@@ -2440,23 +2341,6 @@ bivariate_map(data = risk,
 
 <head>
 
-```{=html}
-<style>
-.grid-container1 {
-  display: grid;
-  grid-template-columns: 500px 500px;
-  padding: 5px;
-}
-
-.grid-item1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
-  text-align: center;
-}
-</style>
-```
 </head>
 
 <body>
