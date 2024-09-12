@@ -1861,7 +1861,37 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 
 ### [**Leon**]{style="color:#990000"}
 
-```{r risk_ageb_leon}
+<html>
+<head>
+```{=html}
+<style>
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h4>
+</h4>
+<p>
+</p>
+
+::: grid-container1
+
+
+::: grid-item1
+```{r risk_ageb_leon1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
 source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
@@ -1877,14 +1907,78 @@ bivariate_map(data = risk,
               x_leg = 0.67, 
               y_leg = 0.65,
               leg_scale = 0.9,
-              size_lab = 7)
+              size_lab = 7,
+              static_map = TRUE)
 
 ```
+:::
+
+::: grid-item1
+```{r risk_ageb_leon2}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Leon de Aldama")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7,
+              static_map = FALSE)
+
+```
+:::
+
+
+:::
+
+</body>
+</html>
+
 
 
 ### [**Guanajuato**]{style="color:#990000"}
 
-```{r risk_ageb_guanajuato}
+
+<html>
+<head>
+```{=html}
+<style>
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h4>
+</h4>
+<p>
+</p>
+
+::: grid-container1
+
+
+::: grid-item1
+
+```{r risk_ageb_guanajuato1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
 source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
@@ -1900,14 +1994,79 @@ bivariate_map(data = risk,
               x_leg = 0.67, 
               y_leg = 0.65,
               leg_scale = 0.9,
-              size_lab = 7)
+              size_lab = 7,
+              static_map = TRUE)
 
 ```
+
+:::
+
+::: grid-item1
+
+```{r risk_ageb_guanajuato2}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Guanajuato")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7,
+              static_map = FALSE)
+
+```
+
+:::
+
+
+:::
+
+</body>
+</html>
 
 
 ### [**Celaya**]{style="color:#990000"}
 
-```{r risk_ageb_celaya}
+<html>
+<head>
+```{=html}
+<style>
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h4>
+</h4>
+<p>
+</p>
+
+::: grid-container1
+
+
+::: grid-item1
+
+```{r risk_ageb_celaya1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
 source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
@@ -1923,14 +2082,81 @@ bivariate_map(data = risk,
               x_leg = 0.67, 
               y_leg = 0.65,
               leg_scale = 0.9,
-              size_lab = 7)
+              size_lab = 7,
+              static_map = TRUE)
 
 ```
+
+:::
+
+::: grid-item1
+
+```{r risk_ageb_celaya2}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Celaya")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7,
+              static_map = FALSE)
+
+```
+
+:::
+
+
+:::
+
+</body>
+</html>
+
+
 
 
 ### [**Irapuato**]{style="color:#990000"}
 
-```{r risk_ageb_irapuato}
+<html>
+<head>
+```{=html}
+<style>
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h4>
+</h4>
+<p>
+</p>
+
+::: grid-container1
+
+
+::: grid-item1
+
+```{r risk_ageb_irapuato1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
 source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
@@ -1946,15 +2172,76 @@ bivariate_map(data = risk,
               x_leg = 0.67, 
               y_leg = 0.65,
               leg_scale = 0.9,
-              size_lab = 7)
+              size_lab = 7,
+              static_map = TRUE)
 
 ```
+:::
+
+::: grid-item1
+```{r risk_ageb_irapuato2}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Irapuato")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7,
+              static_map = FALSE)
+
+```
+:::
+
+
+:::
+
+</body>
+</html>
 
 
 
 ### [**San Miguel Allende**]{style="color:#990000"}
 
-```{r risk_ageb_allende}
+<html>
+<head>
+```{=html}
+<style>
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h4>
+</h4>
+<p>
+</p>
+
+::: grid-container1
+
+
+::: grid-item1
+```{r risk_ageb_allende1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
 source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
@@ -1970,14 +2257,76 @@ bivariate_map(data = risk,
               x_leg = 0.67, 
               y_leg = 0.65,
               leg_scale = 0.9,
-              size_lab = 7)
+              size_lab = 7,
+              static_map = TRUE)
 
 ```
+:::
+
+::: grid-item1
+```{r risk_ageb_allende2}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "San Miguel Allende")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7,
+              static_map = FALSE)
+
+```
+:::
+
+
+:::
+
+</body>
+</html
+
 
 
 ### [**Silao**]{style="color:#990000"}
 
-```{r risk_ageb_silao}
+<html>
+<head>
+```{=html}
+<style>
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h4>
+</h4>
+<p>
+</p>
+
+::: grid-container1
+
+
+::: grid-item1
+```{r risk_ageb_silao1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
 source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
@@ -1993,14 +2342,76 @@ bivariate_map(data = risk,
               x_leg = 0.67, 
               y_leg = 0.65,
               leg_scale = 0.9,
-              size_lab = 7)
+              size_lab = 7,
+              static_map = TRUE)
 
 ```
+:::
+
+::: grid-item1
+```{r risk_ageb_silao2}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Silao de Victoria")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7,
+              static_map = FALSE)
+
+```
+:::
+
+
+:::
+
+</body>
+</html
+
 
 
 ### [**Salamanca**]{style="color:#990000"}
 
-```{r risk_ageb_salamanca}
+<html>
+<head>
+```{=html}
+<style>
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h4>
+</h4>
+<p>
+</p>
+
+::: grid-container1
+
+
+::: grid-item1
+```{r risk_ageb_salamanca1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
 source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
@@ -2016,14 +2427,76 @@ bivariate_map(data = risk,
               x_leg = 0.67, 
               y_leg = 0.65,
               leg_scale = 0.9,
-              size_lab = 7)
+              size_lab = 7,
+              static_map = TRUE)
 
 ```
+:::
+
+::: grid-item1
+```{r risk_ageb_salamanca2}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Salamanca")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7,
+              static_map = FALSE)
+
+```
+:::
+
+
+:::
+
+</body>
+</html
+
 
 
 ### [**Acambaro**]{style="color:#990000"}
 
-```{r risk_ageb_acambaro}
+<html>
+<head>
+```{=html}
+<style>
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h4>
+</h4>
+<p>
+</p>
+
+::: grid-container1
+
+
+::: grid-item1
+```{r risk_ageb_acambaro1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
 source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
@@ -2039,13 +2512,39 @@ bivariate_map(data = risk,
               x_leg = 0.67, 
               y_leg = 0.65,
               leg_scale = 0.9,
-              size_lab = 7)
+              size_lab = 7,
+              static_map = TRUE)
 
 ```
+:::
 
+::: grid-item1
+```{r risk_ageb_acambaro2}
+# Step 1. calculate the risk ####
+source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
+source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
+
+risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
+                 hotspots = hotspotsdata::hotspots_hex,
+                 cve_edo = "11",
+                 locality = "Acambaro")
+
+
+# Step 2. map ####
+bivariate_map(data = risk, 
+              x_leg = 0.67, 
+              y_leg = 0.65,
+              leg_scale = 0.9,
+              size_lab = 7,
+              static_map = FALSE)
+
+```
+:::
 
 
 :::
 
+</body>
+</html
 
-
+:::
