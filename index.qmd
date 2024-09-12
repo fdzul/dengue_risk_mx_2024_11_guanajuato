@@ -12,15 +12,15 @@ mapview::mapviewOptions(default = TRUE,
                         basemaps.color.shuffle = FALSE)
 ```
 
-
 # [**Hotspots de Dengue**]{style="font-size:2pt"}
 
 ::: panel-tabset
-
 ### [**León**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 body {
@@ -74,6 +74,7 @@ body {
 </style>
 ```
 </head>
+
 <body>
 
 ::: wrapper
@@ -231,14 +232,17 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 ```
 :::
 :::
-</body>
-</html>
 
+</body>
+
+</html>
 
 ### [**Guanajuato**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 body {
@@ -292,7 +296,9 @@ body {
 </style>
 ```
 </head>
+
 <body>
+
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_guanajuato}
@@ -448,14 +454,17 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 ```
 :::
 :::
-</body>
-</html>
 
+</body>
+
+</html>
 
 ### [**Celaya**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 body {
@@ -509,7 +518,9 @@ body {
 </style>
 ```
 </head>
+
 <body>
+
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_celaya}
@@ -665,13 +676,17 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 ```
 :::
 :::
+
 </body>
+
 </html>
 
 ### [**Irapuato**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 body {
@@ -725,7 +740,9 @@ body {
 </style>
 ```
 </head>
+
 <body>
+
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_irapuato}
@@ -881,13 +898,17 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 ```
 :::
 :::
+
 </body>
+
 </html>
 
 ### [**San Miguel Allende**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 body {
@@ -941,7 +962,9 @@ body {
 </style>
 ```
 </head>
+
 <body>
+
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_san_miguel}
@@ -1097,14 +1120,17 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 ```
 :::
 :::
-</body>
-</html>
 
+</body>
+
+</html>
 
 ### [**Silao**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 body {
@@ -1158,7 +1184,9 @@ body {
 </style>
 ```
 </head>
+
 <body>
+
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_silao}
@@ -1314,14 +1342,17 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 ```
 :::
 :::
-</body>
-</html>
 
+</body>
+
+</html>
 
 ### [**Salamanca**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 body {
@@ -1375,7 +1406,9 @@ body {
 </style>
 ```
 </head>
+
 <body>
+
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_salamanca}
@@ -1531,14 +1564,17 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 ```
 :::
 :::
-</body>
-</html>
 
+</body>
+
+</html>
 
 ### [**Acambaro**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 body {
@@ -1592,7 +1628,9 @@ body {
 </style>
 ```
 </head>
+
 <body>
+
 ::: wrapper
 ::: {.box .a}
 ```{r hotspots_dengue_acambaro}
@@ -1748,18 +1786,15 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 ```
 :::
 :::
+
 </body>
+
 </html>
-
 :::
-
-
 
 # [**Hotspots del Vector**]{style="font-size:2pt"}
 
 ::: panel-tabset
-
-
 ### [**Guanajuato**]{style="color:#990000"}
 
 ```{r vector_hotspots_guanajuato, dpi = 300, warning=FALSE, message=FALSE}
@@ -1770,7 +1805,6 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
                            name = "SunsetDark",
                            static_map = FALSE)
 ```
-
 
 ### [**León**]{style="color:#990000"}
 
@@ -1816,7 +1850,6 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
                            static_map = FALSE)
 ```
 
-
 ### [**Silao**]{style="color:#990000"}
 
 ```{r vector_hotspots_silao, dpi = 300, warning=FALSE, message=FALSE}
@@ -1827,7 +1860,6 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
                            name = "SunsetDark",
                            static_map = FALSE)
 ```
-
 
 ### [**Salamanca**]{style="color:#990000"}
 
@@ -1840,7 +1872,6 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
                            static_map = FALSE)
 ```
 
-
 ### [**Acámbaro**]{style="color:#990000"}
 
 ```{r vector_hotspots_acambaro, dpi = 300, warning=FALSE, message=FALSE}
@@ -1851,104 +1882,82 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
                            name = "SunsetDark",
                            static_map = FALSE)
 ```
-
-
 :::
 
 # [**Escenarios Epidemiológicos**]{style="font-size:2pt"}
 
 ::: panel-tabset
-
 ### [**Leon**]{style="color:#990000"}
 
 <html>
 <head>
 ```{=html}
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.grid-container1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 5px;
+body {
+  font-family: Arial;
+  color: white;
 }
 
-.grid-item1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
 }
 </style>
 ```
 </head>
+
 <body>
-<h4>
-</h4>
-<p>
-</p>
 
-::: grid-container1
+::: {.split .left}
+::: centered
+31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AUQBCAGoAQQBHAEkAQQBOAHcAQQA1AEEARwBVAEEATgBnAEIAagBBAEMAMABBAE8AQQBBADQAQQBEAGcAQQBaAEEAQQB0AEEARABRAEEAWQBRAEEAdwBBAEcAVQBBAEwAUQBBADUAQQBHAE0AQQBPAFEAQgBpAEEAQwAwAEEAWgBnAEIAbQBBAEQAWQBBAE4AdwBCAGoAQQBHAFEAQQBOAEEAQQB3AEEARABRAEEAWgBRAEEAMgBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBRAEEANABBAEQAZwBBAE0AdwBBAHgAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFkAQQBCAGcAQQBHAEEAQQBlAHcAQgA3AEEASABJAEEASQBBAEIAeQBBAEcAawBBAGMAdwBCAHIAQQBGADgAQQBZAFEAQgBuAEEARwBVAEEAWQBnAEIAZgBBAEcAdwBBAFoAUQBCAHYAQQBHADQAQQBNAFEAQgA5AEEASAAwAEEAQwBnAEEAagBBAEMAQQBBAFUAdwBCADAAQQBHAFUAQQBjAEEAQQBnAEEARABFAEEATABnAEEAZwBBAEcATQBBAFkAUQBCAHMAQQBHAE0AQQBkAFEAQgBzAEEARwBFAEEAZABBAEIAbABBAEMAQQBBAGQAQQBCAG8AQQBHAFUAQQBJAEEAQgB5AEEARwBrAEEAYwB3AEIAcgBBAEMAQQBBAEkAdwBBAGoAQQBDAE0AQQBJAHcAQQBLAEEASABNAEEAYgB3AEIAMQBBAEgASQBBAFkAdwBCAGwAQQBDAGcAQQBJAGcAQgArAEEAQwA4AEEAUgBBAEIAeQBBAEcAOABBAGMAQQBCAGkAQQBHADgAQQBlAEEAQQB2AEEARwBnAEEAYgB3AEIAMABBAEgATQBBAGMAQQBCAHYAQQBIAFEAQQBjAHcAQgBmAEEASABZAEEAWgBRAEIAagBBAEgAUQBBAGIAdwBCAHkAQQBGADgAQQBNAGcAQQB3AEEARABJAEEATgBBAEEAdgBBAEQATQBBAEwAZwBCAEcAQQBIAFUAQQBiAGcAQgBqAEEASABRAEEAYQBRAEIAdgBBAEcANABBAGMAdwBBAHYAQQBHAEkAQQBhAFEAQgAyAEEARwBFAEEAYwBnAEIAcABBAEcARQBBAGQAQQBCAGwAQQBGADgAQQBiAFEAQgBoAEEASABBAEEATABnAEIAUwBBAEMASQBBAEsAUQBBAEsAQQBIAE0AQQBiAHcAQgAxAEEASABJAEEAWQB3AEIAbABBAEMAZwBBAEkAZwBCACsAQQBDADgAQQBSAEEAQgB5AEEARwA4AEEAYwBBAEIAaQBBAEcAOABBAGUAQQBBAHYAQQBHAGcAQQBiAHcAQgAwAEEASABNAEEAYwBBAEIAdgBBAEgAUQBBAGMAdwBCAGYAQQBIAFkAQQBaAFEAQgBqAEEASABRAEEAYgB3AEIAeQBBAEYAOABBAE0AZwBBAHcAQQBEAEkAQQBOAEEAQQB2AEEARABNAEEATABnAEIARwBBAEgAVQBBAGIAZwBCAGoAQQBIAFEAQQBhAFEAQgB2AEEARwA0AEEAYwB3AEEAdgBBAEgASQBBAGEAUQBCAHoAQQBHAHMAQQBMAGcAQgBTAEEAQwBJAEEASwBRAEEASwBBAEEAbwBBAGMAZwBCAHAAQQBIAE0AQQBhAHcAQQBnAEEARAB3AEEATABRAEEAZwBBAEgASQBBAGEAUQBCAHoAQQBHAHMAQQBLAEEAQgBpAEEARwBVAEEAZABBAEIAaABBAEgATQBBAEkAQQBBADkAQQBDAEEAQQBaAEEAQgBsAEEARwA0AEEAYgBRAEIAbABBAEgAZwBBAE8AZwBBADYAQQBHAFUAQQBaAHcAQgBuAEEASABNAEEAWAB3AEIAaQBBAEcAVQBBAGQAQQBCAGgAQQBIAE0AQQBYAHcAQQB4AEEARABFAEEAWAB3AEIAbgBBAEgAVQBBAFkAUQBCAHUAQQBHAEUAQQBhAGcAQgAxAEEARwBFAEEAZABBAEIAdgBBAEMAdwBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEARwBnAEEAYgB3AEIAMABBAEgATQBBAGMAQQBCAHYAQQBIAFEAQQBjAHcAQQBnAEEARAAwAEEASQBBAEIAbwBBAEcAOABBAGQAQQBCAHoAQQBIAEEAQQBiAHcAQgAwAEEASABNAEEAWgBBAEIAaABBAEgAUQBBAFkAUQBBADYAQQBEAG8AQQBhAEEAQgB2AEEASABRAEEAYwB3AEIAdwBBAEcAOABBAGQAQQBCAHoAQQBGADgAQQBhAEEAQgBsAEEASABnAEEATABBAEEASwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBZAHcAQgAyAEEARwBVAEEAWAB3AEIAbABBAEcAUQBBAGIAdwBBAGcAQQBEADAAQQBJAEEAQQBpAEEARABFAEEATQBRAEEAaQBBAEMAdwBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEARwB3AEEAYgB3AEIAagBBAEcARQBBAGIAQQBCAHAAQQBIAFEAQQBlAFEAQQBnAEEARAAwAEEASQBBAEEAaQBBAEUAdwBBAFoAUQBCAHYAQQBHADQAQQBJAEEAQgBrAEEARwBVAEEASQBBAEIAQgBBAEcAdwBBAFoAQQBCAGgAQQBHADAAQQBZAFEAQQBpAEEAQwBrAEEAQwBnAEEASwBBAEEAbwBBAEkAdwBBAGcAQQBGAE0AQQBkAEEAQgBsAEEASABBAEEASQBBAEEAeQBBAEMANABBAEkAQQBCAHQAQQBHAEUAQQBjAEEAQQBnAEEAQwBNAEEASQB3AEEAagBBAEMATQBBAEMAZwBCAGkAQQBHAGsAQQBkAGcAQgBoAEEASABJAEEAYQBRAEIAaABBAEgAUQBBAFoAUQBCAGYAQQBHADAAQQBZAFEAQgB3AEEAQwBnAEEAWgBBAEIAaABBAEgAUQBBAFkAUQBBAGcAQQBEADAAQQBJAEEAQgB5AEEARwBrAEEAYwB3AEIAcgBBAEMAdwBBAEkAQQBBAEsAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBlAEEAQgBmAEEARwB3AEEAWgBRAEIAbgBBAEMAQQBBAFAAUQBBAGcAQQBEAEEAQQBMAGcAQQAyAEEARABjAEEATABBAEEAZwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBCADUAQQBGADgAQQBiAEEAQgBsAEEARwBjAEEASQBBAEEAOQBBAEMAQQBBAE0AQQBBAHUAQQBEAFkAQQBOAFEAQQBzAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEIAcwBBAEcAVQBBAFoAdwBCAGYAQQBIAE0AQQBZAHcAQgBoAEEARwB3AEEAWgBRAEEAZwBBAEQAMABBAEkAQQBBAHcAQQBDADQAQQBPAFEAQQBzAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEIAegBBAEcAawBBAGUAZwBCAGwAQQBGADgAQQBiAEEAQgBoAEEARwBJAEEASQBBAEEAOQBBAEMAQQBBAE4AdwBBAHMAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgB6AEEASABRAEEAWQBRAEIAMABBAEcAawBBAFkAdwBCAGYAQQBHADAAQQBZAFEAQgB3AEEAQwBBAEEAUABRAEEAZwBBAEYAUQBBAFUAZwBCAFYAQQBFAFUAQQBLAFEAQQBLAEEAQQBvAEEAWQBBAEIAZwBBAEEAbwBBAFAAQQBCAG8AQQBEAEkAQQBQAGcAQgBLAEEARwBFAEEAYgBnAEIAbABBAEMAQQBBAFIAZwBCAHMAQQBHAFUAQQBlAEEAQQA4AEEAQwA4AEEAYQBBAEEAeQBBAEQANABBAEMAZwBBADgAQQBIAEEAQQBQAGcAQgBUAEEARwA4AEEAYgBRAEIAbABBAEMAQQBBAGQAQQBCAGwAQQBIAGcAQQBkAEEAQQB1AEEARAB3AEEATAB3AEIAdwBBAEQANABBAEMAZwBBAGcAQQBDAEEAQQBQAEEAQQB2AEEARwBRAEEAYQBRAEIAMgBBAEQANABBAEMAZwBBADgAQQBDADgAQQBaAEEAQgBwAEEASABZAEEAUABnAEEASwBBAEEAbwBBAFAAQQBCAGsAQQBHAGsAQQBkAGcAQQBnAEEARwBNAEEAYgBBAEIAaABBAEgATQBBAGMAdwBBADkAQQBDAEkAQQBjAHcAQgB3AEEARwB3AEEAYQBRAEIAMABBAEMAQQBBAGMAZwBCAHAAQQBHAGMAQQBhAEEAQgAwAEEAQwBJAEEAUABnAEEASwBBAEMAQQBBAEkAQQBBADgAQQBHAFEAQQBhAFEAQgAyAEEAQwBBAEEAWQB3AEIAcwBBAEcARQBBAGMAdwBCAHoAQQBEADAAQQBJAGcAQgBqAEEARwBVAEEAYgBnAEIAMABBAEcAVQBBAGMAZwBCAGwAQQBHAFEAQQBJAGcAQQArAEEAQQBvAEEAWQBBAEIAZwBBAEcAQQBBAGUAdwBCAHkAQQBDAEEAQQBjAGcAQgBwAEEASABNAEEAYQB3AEIAZgBBAEcARQBBAFoAdwBCAGwAQQBHAEkAQQBYAHcAQgBzAEEARwBVAEEAYgB3AEIAdQBBAEQASQBBAGYAUQBBAEsAQQBDAE0AQQBJAEEAQgBUAEEASABRAEEAWgBRAEIAdwBBAEMAQQBBAE0AUQBBAHUAQQBDAEEAQQBZAHcAQgBoAEEARwB3AEEAWQB3AEIAMQBBAEcAdwBBAFkAUQBCADAAQQBHAFUAQQBJAEEAQgAwAEEARwBnAEEAWgBRAEEAZwBBAEgASQBBAGEAUQBCAHoAQQBHAHMAQQBJAEEAQQBqAEEAQwBNAEEASQB3AEEAagBBAEEAbwBBAGMAdwBCAHYAQQBIAFUAQQBjAGcAQgBqAEEARwBVAEEASwBBAEEAaQBBAEgANABBAEwAdwBCAEUAQQBIAEkAQQBiAHcAQgB3AEEARwBJAEEAYgB3AEIANABBAEMAOABBAGEAQQBCAHYAQQBIAFEAQQBjAHcAQgB3AEEARwA4AEEAZABBAEIAegBBAEYAOABBAGQAZwBCAGwAQQBHAE0AQQBkAEEAQgB2AEEASABJAEEAWAB3AEEAeQBBAEQAQQBBAE0AZwBBADAAQQBDADgAQQBNAHcAQQB1AEEARQBZAEEAZABRAEIAdQBBAEcATQBBAGQAQQBCAHAAQQBHADgAQQBiAGcAQgB6AEEAQwA4AEEAWQBnAEIAcABBAEgAWQBBAFkAUQBCAHkAQQBHAGsAQQBZAFEAQgAwAEEARwBVAEEAWAB3AEIAdABBAEcARQBBAGMAQQBBAHUAQQBGAEkAQQBJAGcAQQBwAEEAQQBvAEEAYwB3AEIAdgBBAEgAVQBBAGMAZwBCAGoAQQBHAFUAQQBLAEEAQQBpAEEASAA0AEEATAB3AEIARQBBAEgASQBBAGIAdwBCAHcAQQBHAEkAQQBiAHcAQgA0AEEAQwA4AEEAYQBBAEIAdgBBAEgAUQBBAGMAdwBCAHcAQQBHADgAQQBkAEEAQgB6AEEARgA4AEEAZABnAEIAbABBAEcATQBBAGQAQQBCAHYAQQBIAEkAQQBYAHcAQQB5AEEARABBAEEATQBnAEEAMABBAEMAOABBAE0AdwBBAHUAQQBFAFkAQQBkAFEAQgB1AEEARwBNAEEAZABBAEIAcABBAEcAOABBAGIAZwBCAHoAQQBDADgAQQBjAGcAQgBwAEEASABNAEEAYQB3AEEAdQBBAEYASQBBAEkAZwBBAHAAQQBBAG8AQQBDAGcAQgB5AEEARwBrAEEAYwB3AEIAcgBBAEMAQQBBAFAAQQBBAHQAQQBDAEEAQQBjAGcAQgBwAEEASABNAEEAYQB3AEEAbwBBAEcASQBBAFoAUQBCADAAQQBHAEUAQQBjAHcAQQBnAEEARAAwAEEASQBBAEIAawBBAEcAVQBBAGIAZwBCAHQAQQBHAFUAQQBlAEEAQQA2AEEARABvAEEAWgBRAEIAbgBBAEcAYwBBAGMAdwBCAGYAQQBHAEkAQQBaAFEAQgAwAEEARwBFAEEAYwB3AEIAZgBBAEQARQBBAE0AUQBCAGYAQQBHAGMAQQBkAFEAQgBoAEEARwA0AEEAWQBRAEIAcQBBAEgAVQBBAFkAUQBCADAAQQBHADgAQQBMAEEAQQBLAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAGEAQQBCAHYAQQBIAFEAQQBjAHcAQgB3AEEARwA4AEEAZABBAEIAegBBAEMAQQBBAFAAUQBBAGcAQQBHAGcAQQBiAHcAQgAwAEEASABNAEEAYwBBAEIAdgBBAEgAUQBBAGMAdwBCAGsAQQBHAEUAQQBkAEEAQgBoAEEARABvAEEATwBnAEIAbwBBAEcAOABBAGQAQQBCAHoAQQBIAEEAQQBiAHcAQgAwAEEASABNAEEAWAB3AEIAbwBBAEcAVQBBAGUAQQBBAHMAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEIAagBBAEgAWQBBAFoAUQBCAGYAQQBHAFUAQQBaAEEAQgB2AEEAQwBBAEEAUABRAEEAZwBBAEMASQBBAE0AUQBBAHgAQQBDAEkAQQBMAEEAQQBLAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAGIAQQBCAHYAQQBHAE0AQQBZAFEAQgBzAEEARwBrAEEAZABBAEIANQBBAEMAQQBBAFAAUQBBAGcAQQBDAEkAQQBUAEEAQgBsAEEARwA4AEEAYgBnAEEAZwBBAEcAUQBBAFoAUQBBAGcAQQBFAEUAQQBiAEEAQgBrAEEARwBFAEEAYgBRAEIAaABBAEMASQBBAEsAUQBBAEsAQQBBAG8AQQBDAGcAQQBqAEEAQwBBAEEAVQB3AEIAMABBAEcAVQBBAGMAQQBBAGcAQQBEAEkAQQBMAGcAQQBnAEEARwAwAEEAWQBRAEIAdwBBAEMAQQBBAEkAdwBBAGoAQQBDAE0AQQBJAHcAQQBLAEEARwBJAEEAYQBRAEIAMgBBAEcARQBBAGMAZwBCAHAAQQBHAEUAQQBkAEEAQgBsAEEARgA4AEEAYgBRAEIAaABBAEgAQQBBAEsAQQBCAGsAQQBHAEUAQQBkAEEAQgBoAEEAQwBBAEEAUABRAEEAZwBBAEgASQBBAGEAUQBCAHoAQQBHAHMAQQBMAEEAQQBnAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEIANABBAEYAOABBAGIAQQBCAGwAQQBHAGMAQQBJAEEAQQA5AEEAQwBBAEEATQBBAEEAdQBBAEQAWQBBAE4AdwBBAHMAQQBDAEEAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEASABrAEEAWAB3AEIAcwBBAEcAVQBBAFoAdwBBAGcAQQBEADAAQQBJAEEAQQB3AEEAQwA0AEEATgBnAEEAMQBBAEMAdwBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBHAHcAQQBaAFEAQgBuAEEARgA4AEEAYwB3AEIAagBBAEcARQBBAGIAQQBCAGwAQQBDAEEAQQBQAFEAQQBnAEEARABBAEEATABnAEEANQBBAEMAdwBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBIAE0AQQBhAFEAQgA2AEEARwBVAEEAWAB3AEIAcwBBAEcARQBBAFkAZwBBAGcAQQBEADAAQQBJAEEAQQAzAEEAQwB3AEEAQwBnAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEgATQBBAGQAQQBCAGgAQQBIAFEAQQBhAFEAQgBqAEEARgA4AEEAYgBRAEIAaABBAEgAQQBBAEkAQQBBADkAQQBDAEEAQQBSAGcAQgBCAEEARQB3AEEAVQB3AEIARgBBAEMAawBBAEMAZwBBAEsAQQBHAEEAQQBZAEEAQgBnAEEAQQA9AD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602
 
+<h2>John Doe</h2>
 
-::: grid-item1
-```{r risk_ageb_leon1}
-# Step 1. calculate the risk ####
-source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
-source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
-
-risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
-                 hotspots = hotspotsdata::hotspots_hex,
-                 cve_edo = "11",
-                 locality = "Leon de Aldama")
-
-
-# Step 2. map ####
-bivariate_map(data = risk, 
-              x_leg = 0.67, 
-              y_leg = 0.65,
-              leg_scale = 0.9,
-              size_lab = 7,
-              static_map = TRUE)
-
-```
+<p>Some text here too.</p>
 :::
-
-::: grid-item1
-```{r risk_ageb_leon2}
-# Step 1. calculate the risk ####
-source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
-source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
-
-risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
-                 hotspots = hotspotsdata::hotspots_hex,
-                 cve_edo = "11",
-                 locality = "Leon de Aldama")
-
-
-# Step 2. map ####
-bivariate_map(data = risk, 
-              x_leg = 0.67, 
-              y_leg = 0.65,
-              leg_scale = 0.9,
-              size_lab = 7,
-              static_map = FALSE)
-
-```
 :::
 
 
-:::
 
 </body>
 </html>
 
-
-
 ### [**Guanajuato**]{style="color:#990000"}
 
-
 <html>
+
 <head>
+
 ```{=html}
 <style>
 .grid-container1 {
@@ -1967,17 +1976,19 @@ bivariate_map(data = risk,
 </style>
 ```
 </head>
+
 <body>
+
 <h4>
+
 </h4>
+
 <p>
+
 </p>
 
 ::: grid-container1
-
-
 ::: grid-item1
-
 ```{r risk_ageb_guanajuato1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
@@ -1998,22 +2009,11 @@ bivariate_map(data = risk,
               static_map = TRUE)
 
 ```
-
 :::
 
 ::: grid-item1
-
 ```{r risk_ageb_guanajuato2}
 # Step 1. calculate the risk ####
-source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
-source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
-
-risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
-                 hotspots = hotspotsdata::hotspots_hex,
-                 cve_edo = "11",
-                 locality = "Guanajuato")
-
-
 # Step 2. map ####
 bivariate_map(data = risk, 
               x_leg = 0.67, 
@@ -2023,20 +2023,19 @@ bivariate_map(data = risk,
               static_map = FALSE)
 
 ```
-
 :::
-
-
 :::
 
 </body>
-</html>
 
+</html>
 
 ### [**Celaya**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 .grid-container1 {
@@ -2055,17 +2054,19 @@ bivariate_map(data = risk,
 </style>
 ```
 </head>
+
 <body>
+
 <h4>
+
 </h4>
+
 <p>
+
 </p>
 
 ::: grid-container1
-
-
 ::: grid-item1
-
 ```{r risk_ageb_celaya1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
@@ -2086,21 +2087,11 @@ bivariate_map(data = risk,
               static_map = TRUE)
 
 ```
-
 :::
 
 ::: grid-item1
-
 ```{r risk_ageb_celaya2}
 # Step 1. calculate the risk ####
-source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
-source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
-
-risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
-                 hotspots = hotspotsdata::hotspots_hex,
-                 cve_edo = "11",
-                 locality = "Celaya")
-
 
 # Step 2. map ####
 bivariate_map(data = risk, 
@@ -2111,22 +2102,19 @@ bivariate_map(data = risk,
               static_map = FALSE)
 
 ```
-
 :::
-
-
 :::
 
 </body>
+
 </html>
-
-
-
 
 ### [**Irapuato**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 .grid-container1 {
@@ -2145,17 +2133,19 @@ bivariate_map(data = risk,
 </style>
 ```
 </head>
+
 <body>
+
 <h4>
+
 </h4>
+
 <p>
+
 </p>
 
 ::: grid-container1
-
-
 ::: grid-item1
-
 ```{r risk_ageb_irapuato1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
@@ -2180,15 +2170,6 @@ bivariate_map(data = risk,
 
 ::: grid-item1
 ```{r risk_ageb_irapuato2}
-# Step 1. calculate the risk ####
-source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
-source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
-
-risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
-                 hotspots = hotspotsdata::hotspots_hex,
-                 cve_edo = "11",
-                 locality = "Irapuato")
-
 
 # Step 2. map ####
 bivariate_map(data = risk, 
@@ -2200,19 +2181,18 @@ bivariate_map(data = risk,
 
 ```
 :::
-
-
 :::
 
 </body>
+
 </html>
-
-
 
 ### [**San Miguel Allende**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 .grid-container1 {
@@ -2231,15 +2211,18 @@ bivariate_map(data = risk,
 </style>
 ```
 </head>
+
 <body>
+
 <h4>
+
 </h4>
+
 <p>
+
 </p>
 
 ::: grid-container1
-
-
 ::: grid-item1
 ```{r risk_ageb_allende1}
 # Step 1. calculate the risk ####
@@ -2265,16 +2248,6 @@ bivariate_map(data = risk,
 
 ::: grid-item1
 ```{r risk_ageb_allende2}
-# Step 1. calculate the risk ####
-source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
-source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
-
-risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
-                 hotspots = hotspotsdata::hotspots_hex,
-                 cve_edo = "11",
-                 locality = "San Miguel Allende")
-
-
 # Step 2. map ####
 bivariate_map(data = risk, 
               x_leg = 0.67, 
@@ -2285,19 +2258,18 @@ bivariate_map(data = risk,
 
 ```
 :::
-
-
 :::
 
 </body>
-</html
 
-
+</html>
 
 ### [**Silao**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 .grid-container1 {
@@ -2316,15 +2288,18 @@ bivariate_map(data = risk,
 </style>
 ```
 </head>
+
 <body>
+
 <h4>
+
 </h4>
+
 <p>
+
 </p>
 
 ::: grid-container1
-
-
 ::: grid-item1
 ```{r risk_ageb_silao1}
 # Step 1. calculate the risk ####
@@ -2350,14 +2325,7 @@ bivariate_map(data = risk,
 
 ::: grid-item1
 ```{r risk_ageb_silao2}
-# Step 1. calculate the risk ####
-source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
-source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
 
-risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
-                 hotspots = hotspotsdata::hotspots_hex,
-                 cve_edo = "11",
-                 locality = "Silao de Victoria")
 
 
 # Step 2. map ####
@@ -2370,19 +2338,18 @@ bivariate_map(data = risk,
 
 ```
 :::
-
-
 :::
 
 </body>
-</html
 
-
+</html>
 
 ### [**Salamanca**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 .grid-container1 {
@@ -2401,15 +2368,18 @@ bivariate_map(data = risk,
 </style>
 ```
 </head>
+
 <body>
+
 <h4>
+
 </h4>
+
 <p>
+
 </p>
 
 ::: grid-container1
-
-
 ::: grid-item1
 ```{r risk_ageb_salamanca1}
 # Step 1. calculate the risk ####
@@ -2435,16 +2405,6 @@ bivariate_map(data = risk,
 
 ::: grid-item1
 ```{r risk_ageb_salamanca2}
-# Step 1. calculate the risk ####
-source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
-source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
-
-risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
-                 hotspots = hotspotsdata::hotspots_hex,
-                 cve_edo = "11",
-                 locality = "Salamanca")
-
-
 # Step 2. map ####
 bivariate_map(data = risk, 
               x_leg = 0.67, 
@@ -2455,19 +2415,18 @@ bivariate_map(data = risk,
 
 ```
 :::
-
-
 :::
 
 </body>
-</html
 
-
+</html>
 
 ### [**Acambaro**]{style="color:#990000"}
 
 <html>
+
 <head>
+
 ```{=html}
 <style>
 .grid-container1 {
@@ -2486,15 +2445,18 @@ bivariate_map(data = risk,
 </style>
 ```
 </head>
+
 <body>
+
 <h4>
+
 </h4>
+
 <p>
+
 </p>
 
 ::: grid-container1
-
-
 ::: grid-item1
 ```{r risk_ageb_acambaro1}
 # Step 1. calculate the risk ####
@@ -2520,16 +2482,6 @@ bivariate_map(data = risk,
 
 ::: grid-item1
 ```{r risk_ageb_acambaro2}
-# Step 1. calculate the risk ####
-source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
-source("~/Dropbox/hotspots_vector_2024/3.Functions/risk.R")
-
-risk <- risk(betas = denmex::eggs_betas_11_guanajuato,
-                 hotspots = hotspotsdata::hotspots_hex,
-                 cve_edo = "11",
-                 locality = "Acambaro")
-
-
 # Step 2. map ####
 bivariate_map(data = risk, 
               x_leg = 0.67, 
@@ -2540,11 +2492,9 @@ bivariate_map(data = risk,
 
 ```
 :::
-
-
 :::
 
 </body>
-</html
 
+</html>
 :::
