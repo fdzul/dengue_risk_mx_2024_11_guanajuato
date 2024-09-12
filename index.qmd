@@ -1889,47 +1889,23 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_11_guanajuato,
 ::: panel-tabset
 ### [**Leon**]{style="color:#990000"}
 
-<html>
+html>
 <head>
+
 ```{=html}
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Arial;
-  color: white;
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  padding: 5px;
 }
 
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.left {
-  left: 0;
-  background-color: #111;
-}
-
-.right {
-  right: 0;
-  background-color: red;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 15px;
   text-align: center;
-}
-
-.centered img {
-  width: 150px;
-  border-radius: 50%;
 }
 </style>
 ```
@@ -1937,8 +1913,16 @@ body {
 
 <body>
 
-::: {.split .left}
-::: centered
+<h4>
+
+</h4>
+
+<p>
+
+</p>
+
+::: grid-container1
+::: grid-item1
 ```{r risk_ageb_leon1}
 # Step 1. calculate the risk ####
 source("~/Dropbox/hotspots_vector_2024/3.Functions/bivariate_map.R")
@@ -1961,8 +1945,7 @@ bivariate_map(data = risk,
 ```
 :::
 
-::: {.split .right}
-::: centered
+::: grid-item1
 ```{r risk_ageb_leon2}
 
 
@@ -1976,13 +1959,11 @@ bivariate_map(data = risk,
 
 ```
 :::
-
 :::
-
-
 
 </body>
 </html>
+
 
 ### [**Guanajuato**]{style="color:#990000"}
 
